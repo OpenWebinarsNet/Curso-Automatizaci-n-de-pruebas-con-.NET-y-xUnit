@@ -1,0 +1,50 @@
+image: mcr.microsoft.com/dotnet/sdk:6.0
+
+stages:
+  - build
+  - test
+  - publish
+  - deploy
+
+build:
+  stage: build
+  script:
+    - dotnet restore
+    - dotnet build -c Release --no-restore
+  artifacts:
+    paths:
+    - test
+    expire_in: 8 hour
+
+test:
+  stage: test
+  services:
+    - name: mongo:4.0
+      alias: mongodb
+  variables:
+    MONGO_INITDB_ROOT_USERNAME: root
+    MONGO_INITDB_ROOT_PASSWORD: dummy
+  script: dotnet test -c Release
+  allow_failure: false
+  rules:
+    - exists:
+      - test/**/*Tests.csproj
+
+publish:
+  stage: publish
+  script:
+    - dotnet publish -c Release -o dist
+  artifacts:
+    paths: 
+      - dist
+    expire_in: 8 hour
+  rules:
+    - when: on_success
+
+deploy:
+  stage: deploy
+  script:
+    - ls dist
+    - echo "TODO publicar contenidos de dist en un servidor, o crear imagen docker, etc."
+  rules:
+    - when: on_success

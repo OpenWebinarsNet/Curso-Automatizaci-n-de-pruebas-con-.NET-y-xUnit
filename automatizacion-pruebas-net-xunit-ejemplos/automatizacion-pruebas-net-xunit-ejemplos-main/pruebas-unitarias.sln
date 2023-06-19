@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{319CA2A9-79FF-4B0E-A443-CECEEBDC8273}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F704F2B6-AE3E-4004-99BD-83AA26080F7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeRateCalculation", "src\ExchangeRateCalculation\ExchangeRateCalculation.csproj", "{034E6846-7FA3-4A05-9F74-D4C3AB60A58D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeRateCalculation.UnitTests", "test\ExchangeRateCalculation.UnitTests\ExchangeRateCalculation.UnitTests.csproj", "{B944D3D8-94E1-4135-AB24-3DA8568F8E22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{263ED6F0-E4C9-4E77-8D6F-01474C9D79AE}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRateCalculation.WebApi", "src\ExchangeRateCalculation.WebApi\ExchangeRateCalculation.WebApi.csproj", "{3EFC072A-F906-4965-9D51-4C74927077BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRateCalculation.FunctionalTests", "test\ExchangeRateCalculation.FunctionalTests\ExchangeRateCalculation.FunctionalTests.csproj", "{08817199-1707-4ECD-934E-E4EC73AFFAB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{034E6846-7FA3-4A05-9F74-D4C3AB60A58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034E6846-7FA3-4A05-9F74-D4C3AB60A58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034E6846-7FA3-4A05-9F74-D4C3AB60A58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034E6846-7FA3-4A05-9F74-D4C3AB60A58D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B944D3D8-94E1-4135-AB24-3DA8568F8E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B944D3D8-94E1-4135-AB24-3DA8568F8E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B944D3D8-94E1-4135-AB24-3DA8568F8E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B944D3D8-94E1-4135-AB24-3DA8568F8E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EFC072A-F906-4965-9D51-4C74927077BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFC072A-F906-4965-9D51-4C74927077BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EFC072A-F906-4965-9D51-4C74927077BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EFC072A-F906-4965-9D51-4C74927077BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08817199-1707-4ECD-934E-E4EC73AFFAB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08817199-1707-4ECD-934E-E4EC73AFFAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08817199-1707-4ECD-934E-E4EC73AFFAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08817199-1707-4ECD-934E-E4EC73AFFAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{034E6846-7FA3-4A05-9F74-D4C3AB60A58D} = {319CA2A9-79FF-4B0E-A443-CECEEBDC8273}
+		{B944D3D8-94E1-4135-AB24-3DA8568F8E22} = {F704F2B6-AE3E-4004-99BD-83AA26080F7D}
+		{3EFC072A-F906-4965-9D51-4C74927077BF} = {319CA2A9-79FF-4B0E-A443-CECEEBDC8273}
+		{08817199-1707-4ECD-934E-E4EC73AFFAB4} = {F704F2B6-AE3E-4004-99BD-83AA26080F7D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A8FF445-BBCF-441B-BA64-7B6C3745E1A4}
+	EndGlobalSection
+EndGlobal
